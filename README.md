@@ -1,6 +1,6 @@
 # Mandy Koch — Personal Platform-Runtime
 
-[Live on Vercel](https://mandy-platform-runtime.vercel.app) · [Live on GitHub Pages](https://Skulli485.github.io/mandy-platform-runtime/)
+[Live on Vercel](https://mandy-platform-runtime.vercel.app) · [Live on GitHub Pages](https://github.com/Skulli485/mandy-platform-runtime)
 
 ## Was das ist
 Ein Multi-Page-Personal-Showcase, gebaut mit Modern CSS Features (Mai 2026).
