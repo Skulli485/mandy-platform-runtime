@@ -11,7 +11,7 @@ Kein Framework, kein Build-Step, vier Pages, ein Token-System.
 - **Pricing** — Subgrid-aligned Plan-Cards
 - **Profile** — Stat-Cards mit Anchor-Positioned-Tooltips
 - **Login** — Form mit :has()-basierter Email-Validation
-- **[deine neue Page]** — [eine Zeile Beschreibung]
+- **about** — eine persönliche About-Seite mit mordernem CSS, die mein Profil sowie meinen beruflichen Hintergrund und meine Socials zeigt und dabei Features wie Tokens, @container und subgrid verwendet.
 
 ## Modern CSS Features
 - 3-Layer Token-System (Primitives → Semantic → Component)
