@@ -105,6 +105,10 @@
      in jeder Card gleich hoch. Code in der Lecture, Block B. */
 }
 
+/* Box-Model-Frage: was wäre die tatsächliche Breite einer .plan-Card,
+   wenn box-sizing NICHT border-box wäre?
+   Antwort: Die Card wäre 66px breiter
+   (64px Padding + 2px Border zusätzlich zur eigentlichen Breite). */
 .plan {
   background: var(--color-card);
   border: 1px solid var(--color-border);
@@ -361,4 +365,116 @@
 .forgot a {
   color: var(--color-brand);
   text-decoration: none;
+}
+
+/* ========== ABOUT ========== */
+.page-about {
+  container-type: inline-size;
+}
+
+.about-hero {
+  margin-bottom: 3rem;
+}
+
+.about-hero .eyebrow {
+  color: var(--color-brand);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+.about-hero h1 {
+  max-width: 780px;
+  margin-top: 0.75rem;
+  color: var(--color-text);
+}
+
+.about-hero .lead {
+  max-width: 720px;
+  margin-top: 1rem;
+  color: var(--color-text-muted);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.about-card {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 2;
+
+  gap: 0.75rem;
+
+  padding: 1.5rem;
+
+  background: var(--color-card);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+
+  box-shadow: var(--shadow-card);
+}
+
+.about-card-featured {
+  background: var(--color-featured-tint);
+  border-color: var(--color-featured-border);
+}
+
+.social-section {
+  padding: 1.5rem;
+
+  background: var(--color-card);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+
+  box-shadow: var(--shadow-card);
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.75rem;
+
+  margin-top: 1rem;
+}
+
+.social-links a {
+  padding: 0.6rem 0.9rem;
+
+  color: var(--color-brand);
+
+  text-decoration: none;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: white;
+
+  background: var(--color-brand);
+
+  border-color: var(--color-brand);
+}
+
+/* ============================================================
+   CONTAINER QUERY
+   ============================================================ */
+
+@container (max-width: 760px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
 }

@@ -26,6 +26,7 @@ body {
 }
 
 /* === Site Navigation (auf allen Pages identisch) === */
+/* Specificity: (0, 0, 1, 0) => eine Klasse*/
 .site-nav {
   display: flex;
   justify-content: space-between;
@@ -43,11 +44,13 @@ body {
   letter-spacing: -0.01em;
 }
 
+/* Specificity: (0, 0, 1, 1) => eine Klasse + ein Type-sector */
 .site-nav nav {
   display: flex;
   gap: 1.5rem;
 }
 
+/* Specificity: (0, 0, 2, 1) => eine Klasse + 2 Type-sectors */
 .site-nav nav a {
   color: var(--color-text-muted);
   text-decoration: none;
