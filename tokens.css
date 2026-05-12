@@ -14,13 +14,16 @@
    --slate-700: #334155;
    --slate-900: #0f172a;
    --indigo-500: #6366f1;
+   --rose-500: #f43f5e;
+   --amber-600: #d97706;
+   --teal-500: #0d9488;
    --white: #ffffff;
    --black: #000000;
 }
 
 /* LAYER 2 — SEMANTIC (Bedeutung, nicht Zahl) */
 :root {
-   --color-brand: var(--rose-500);
+   --color-brand: var(--teal-500);
    --color-text: var(--slate-900);
    --color-text-muted: var(--slate-500);
    --color-bg: var(--slate-50);
