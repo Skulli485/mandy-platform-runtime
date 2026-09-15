@@ -68,6 +68,84 @@ body {
   padding-bottom: 0.2rem;
 }
 
+/* === Mobile Nav Toggle (CSS-only, kein JS) === */
+.nav-toggle-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.nav-toggle-label {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .site-nav {
+    position: relative;
+  }
+
+  .nav-toggle-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-button);
+    cursor: pointer;
+  }
+
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: "";
+    display: block;
+    width: 1rem;
+    height: 2px;
+    background: var(--color-text);
+  }
+
+  .nav-toggle-label span::before {
+    transform: translateY(-5px);
+  }
+
+  .nav-toggle-label span::after {
+    transform: translateY(3px);
+  }
+
+  .nav-toggle-input:focus-visible + .nav-toggle-label {
+    outline: 3px solid var(--color-featured-border);
+    outline-offset: 2px;
+  }
+
+  .site-nav nav {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 100%;
+    left: 1.25rem;
+    right: 1.25rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    z-index: 10;
+  }
+
+  .site-nav nav a {
+    padding: 0.6rem 0.5rem;
+  }
+
+  .nav-toggle-input:checked ~ nav {
+    display: flex;
+  }
+}
+
 /* === Main Content === */
 .page {
   flex: 1;
