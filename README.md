@@ -25,8 +25,8 @@ Kein Framework, kein Build-Step, vier Pages, ein Token-System.
 - @property für animatable typed properties
 
 ## Brand-Swap-Test
-![before](./screenshots/before.png)
-![after](./screenshots/after.png)
+![before](./Screenshots/before.png)
+![after](./Screenshots/after.png)
 
 Eine Zeile in `tokens.css` ändern → ganzes System folgt automatisch.
 
